@@ -310,7 +310,8 @@ h1 span[style*="color: rgba(52, 97, 231, 1)"], h2 span[style*="color: rgba(52, 9
     #row-dd3dc645 [id^="row-"]:hover img{ filter: invert(1) !important }*/
 
     #row-dd3dc645 [id^="row-"] *{ transition: color .3s !important; }
-    #row-dd3dc645 [id^="row-"]:hover *{ color: var(--DS_PR_color_DS) !important }
+    #row-dd3dc645 [id^="row-"]:hover * {color: #C0C0C0 !important; /* Silver */}
+
 
 
     @media (min-width: 1150px){
