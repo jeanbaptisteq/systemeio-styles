@@ -428,7 +428,7 @@ h1 span[style*="color: rgba(52, 97, 231, 1)"], h2 span[style*="color: rgba(52, 9
 
     #row-bd1ae459 *{ z-index: 1;}
     #row-bd1ae459:before{
-        content: 'TÃ‰MOIGNAGES'; 
+        content: 'TÉMOIGNAGES'; 
         width: max-content; height: fit-content;
         font-size: 150px; text-align: center; color: white;
         color: transparent !important; font-weight: 900;
