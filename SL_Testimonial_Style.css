@@ -1,0 +1,262 @@
+ 
+    body .Sl_containerTest{width: 100% !important; margin: auto !important; display: block !important; overflow: visible;}
+
+
+    /************/
+
+
+    .TContTest{ 
+        /*width: 900px;*/ height: auto;
+        position: relative;
+        margin: 0 15px; padding: 1% 2%;  
+        border-radius: 25px; 
+
+    }
+
+    .Test_Content { 
+        margin-top: 40px;
+        padding: 50px 75px 25px; 
+        color: black !important; 
+        background: #f2f2f2;
+        border-radius: 20px;
+        transition: background .5s;
+    }
+
+    .Test_Content:hover { background: black }
+
+    .Test_Content .M_Test_image{ 
+        position: absolute; 
+        bottom: -20px; right: 50px; 
+        transition: filter .5s 
+    } 
+    .Test_Content:hover .M_Test_image{ filter: contrast(0.2) !important } 
+
+    .Test_Content h3, .Test_Content p{ transition: color .5s}
+    .Test_Content:hover h3, .Test_Content:hover p{ color: white !important} 
+
+    .Test_Content img { width: 100px;}
+
+    .Test_Content h3{ 
+        text-align: left; margin: 20px auto !important; 
+        font-size: 16px !important; color: gray;
+        text-transform: uppercase; 
+    }
+
+    .Test_Content p{ font-size: 20px !important; text-align: left; }
+    .Test_Content ul{ padding: 0 !important} 
+    .Test_Content li{ 
+        font-size: 16px; 
+        background: url(https://images.clickfunnels.com/43/3d66c282e747eb90088d5a9adaf932/3_mot.png) no-repeat;
+        background-size: 15px; background-position: left 10px; padding: 6px 4%; list-style: none;
+    } 
+
+
+
+    @media (min-width: 1050px){
+        .Test_Content{ min-height: 320px; display: flex; align-items: center; }
+    }
+
+    @media (min-width: 850px){
+        /*.Test_Content{ height: fit-content; display: inline-block; width: 90%;}*/
+
+    }
+
+
+
+    @media (max-width: 850px){
+        #row--84160, #row--87204{ padding-top: 0 !important; padding-bottom: 0 !important; }
+        .TContTest{ margin: 20px auto; height: auto; }
+        .Test_Content{ margin-top: 20px !important; padding: 35px 25px 25px !important }
+        .Test_Content .M_Test_image{ top: 10px !important; left: 20px !important; } 
+        .Test_Content img{ width: 60px; }
+        .Test_Content h3{ font-size: 12px !important; }
+        .Test_Content p{ font-size: 14px !important;}
+        body .testiSlTest .slick-prev, body .testiSlTest .slick-next { 
+            top: 20px !important; 
+            bottom: auto !important;
+            left: auto !important;
+        }
+        body .testiSlTest .slick-next{ right: 0px !important }
+        body .testiSlTest .slick-prev{ right: 40px !important; }
+        body .testiSlTest .slick-prev:before, body .testiSlTest .slick-next:before{ background-size: 30px !important;}
+
+    }
+
+
+    @media (max-width: 550px){
+    }
+
+
+    @media (max-width: 376px){
+    }
+    
+    /************/
+
+    .testiSlTest .slick-slide{ transition: all .6s }
+    .testiSlTest .slick-slide:not(.slick-active) { opacity: .1; transform: scale(.9); }
+ 
+
+    .testiSlTest ul.slick-dots{ display: flex; /*width: fit-content;*/ margin: 1% auto; padding: 0; 
+        width: 7%; position: absolute; top: -40px; left: -210px; right: 0; margin: auto; 
+    }  
+    .testiSlTest ul.slick-dots button  { 
+        color: transparent; border-radius: 42px; width: 22px; height: 3px; 
+        background: #ffcfe845; border: none; display: block; outline: none
+    }
+    .testiSlTest .slick-dots li{ list-style: none !important; margin: 10% !important}
+    .testiSlTest .slick-dots li.slick-active button{ background: white;}
+
+    /*.slick-slide.slick-active {opacity: 1 !important}*/
+    .slick-slider {
+        /*opacity: 12%;*/
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        user-select: none;
+        -webkit-touch-callout: none;
+        -khtml-user-select: none;
+        -ms-touch-action: pan-y;
+        touch-action: pan-y;
+        -webkit-tap-highlight-color: transparent;
+        transition: all 0.6s
+    }
+    .slick-list {
+        position: relative;
+        display: block;
+        /*overflow: hidden;*/
+        overflow: visible;
+        margin: 0;
+        padding: 0;
+    }
+    .slick-list:focus {
+        outline: none;
+    }
+    .slick-list.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+    .slick-slider .slick-track, .slick-slider .slick-list {
+        transform: translate3d(0, 0, 0);
+    }
+    .slick-track {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+    }
+    .slick-track:before, .slick-track:after {
+        display: table;
+        content: '';
+    }
+    .slick-track:after {
+        clear: both;
+    }
+    .slick-loading .slick-track {
+        visibility: hidden;
+    }
+    .slick-slide {
+        display: none;
+        float: left;
+        height: 90%;
+        min-height: 1px;
+        /*box-shadow: 0 0 3px #d2d2d28c;*/
+        /*margin: 2px 22px;*/
+        margin: 2px 0;
+      width:100%
+    }
+
+    .slick-slide img {
+        display: block;
+    }
+    .slick-slide.slick-loading img {
+        display: none;
+    }
+    .slick-slide.dragging img {
+        pointer-events: none;
+    }
+    .slick-initialized .slick-slide {
+        display: block;
+    }
+    .slick-loading .slick-slide {
+        visibility: hidden;
+    }
+    .slick-vertical .slick-slide {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+    .slick-btn.slick-hidden {
+        display: none;
+    }
+    .testiSlTest .slick-prev, .testiSlTest .slick-next {
+        font-size: 0;
+        line-height: 0;
+        position: absolute;
+        top: 0 !important;
+        bottom: 0 !important;
+        /*left: 0; right: 0;*/
+        margin: auto;
+        /*display: block;*/
+        display: -webkit-inline-flex;
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        left: 1%;
+        transform: translate(0, -50%);
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+    .testiSlTest .slick-prev:hover, .testiSlTest .slick-prev:focus, .testiSlTest .slick-next:hover, .testiSlTest .slick-next:focus {
+        color: transparent;
+        outline: none;
+        background: transparent;
+    }
+    .testiSlTest .slick-prev:hover:before, .testiSlTest .slick-prev:focus:before, .testiSlTest .slick-next:hover:before, .testiSlTest .slick-next:focus:before {
+        opacity: 1;
+    }
+    .testiSlTest .slick-prev:before, .testiSlTest .slick-next:before {
+        /*font-family: "FontAwesome";*/
+        font-size: 25px;
+        margin: auto !important;
+        text-align: center;
+        width: 0;
+        display: block;
+        line-height: 1;
+        opacity: 1;
+        color: #0029ff94;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .testiSlTest .slick-prev {
+        top: 50px !important;
+    }
+    .testiSlTest .slick-prev:before, .testiSlTest .slick-next:before { 
+        width: fit-content; padding: 30%; color: transparent !important; 
+        background-repeat: no-repeat !important; background-position: center !important; 
+        background-size: 35px !important;
+        filter: hue-rotate(315deg) saturate(1.5);
+    }
+    .testiSlTest .slick-prev:before {
+        content: "â‡¦";
+        background: url(https://d1yei2z3i6k35z.cloudfront.net/505757/65721d89b0de0_DS_Test_L_DS.png);
+    }
+    .testiSlTest .slick-next {
+        top: 130px !important;
+    }
+    .testiSlTest .slick-next:before {
+        content: "â‡¨";
+        background: url(https://d1yei2z3i6k35z.cloudfront.net/505757/65721d9673ad4_DS_Test_R_DS.png);
+        margin-left: 0 !important
+    }
+        @media (min-width: 768px) {
+            .Sl_Head * {
+                display: inline-block !important;
+            }
+        }
+  @media (max-width: 768px) {
+    .testiSlTest{ width:100%; }
+    .testiSlTest div{ width:100%; }
+
+  }
