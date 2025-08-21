@@ -183,20 +183,24 @@ h1 span[style*="color: rgba(52, 97, 231, 1)"], h2 span[style*="color: rgba(52, 9
 
 /********/
 
+/* Section 2 — tout le texte en blanc au hover */
+#row-0c628af8 [id^="row-"] p,
+#row-0c628af8 [id^="row-"] span,
+#row-0c628af8 [id^="row-"] li,
+#row-0c628af8 [id^="row-"] div,
+#row-0c628af8 [id^="row-"] a,
+#row-0c628af8 [id^="row-"] small {
+  transition: color .3s !important;
+}
 
-
-/* Section 2 */
-
-    #section-3acfdd23{ 
-        position: relative; overflow: hidden; 
-        z-index: 0 
-    }
-    
-    #row-0c628af8 [id^="row-"]{ transition: background-color .3s !important; }
-    #row-0c628af8 [id^="row-"]:hover{ background-color: var(--DS_PR_color_DS) !important } 
-    
-    #row-0c628af8 [id^="row-"] h3, #row-0c628af8 [id^="row-"] h3 span{ transition: color .3s !important; }
-    #row-0c628af8 [id^="row-"]:hover h3, #row-0c628af8 [id^="row-"]:hover h3 span{ color: white !important } 
+#row-0c628af8 [id^="row-"]:hover p,
+#row-0c628af8 [id^="row-"]:hover span,
+#row-0c628af8 [id^="row-"]:hover li,
+#row-0c628af8 [id^="row-"]:hover div,
+#row-0c628af8 [id^="row-"]:hover a,
+#row-0c628af8 [id^="row-"]:hover small {
+  color: #fff !important;
+}
 
 /*    #image-800b0b6e{ transform: translateY(40px); }*/
 
