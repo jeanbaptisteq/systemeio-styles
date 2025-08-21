@@ -57,9 +57,9 @@
  
 /*VAR*/
 
-:root {
-    --DS_PR_color_DS: #B9A64D;
-    --DS_SC_color_DS: #B9A64Dc9;
+:root{
+  --DS_PR_color_DS: #6F1D1B;    /* ta nouvelle couleur (bordeaux par ex.) */
+  --DS_SC_color_DS: #6F1D1BCC;  /* variante semi-transparente si besoin */
 }
 
 /*****/
